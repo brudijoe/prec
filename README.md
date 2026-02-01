@@ -37,5 +37,3 @@ This project follows a simple and consistent commit message style.
 
 - **build**: Changes that affect the build system or external dependencies
   *Example:* `build: configure webpack for production`
-
-### Commit Message Format
