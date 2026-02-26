@@ -4,8 +4,11 @@ import { useQuery } from '@tanstack/react-query'
 import React, { useState } from 'react';
 import PokemonCard from './pokemon-card';
 import ButtonGroup from './button-group';
+import './i18n';
+import { useTranslation } from 'react-i18next';
 
 export default function Index() {
+  const { t } = useTranslation();
   const [id, setId] = useState(1)
   const { data: pokemon, isLoading, error } = useQuery({
     queryKey: ['pokemon', id],
@@ -15,7 +18,7 @@ export default function Index() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home screen</Text>
+      <Text style={styles.text}>{t('translation:pokedexTitle')}</Text>
       <Link href="/about" style={styles.button}>
         Go to About screen
       </Link>
