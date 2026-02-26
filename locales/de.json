@@ -1,3 +1,6 @@
 {
-"pokedexTitle": "Pokedex"
+    "pokedexTitle": "Pokedex",
+    "region": "Region",
+    "team": "Team",
+    "news": "Neuigkeiten"
 }
